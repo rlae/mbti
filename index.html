@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI 성격 유형 검사</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">MBTI 성격 유형 검사</h1>
+        <form id="mbti-form" class="p-4 bg-white rounded shadow">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>1. 사람들과 어울리는 것을 즐기나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q1" value="E" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q1" value="I" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>2. 일을 계획적으로 진행하는 편인가요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q2" value="J" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q2" value="P" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>3. 실질적인 정보를 선호하나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q3" value="S" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q3" value="N" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>4. 다른 사람의 감정을 잘 이해하나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q4" value="F" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q4" value="T" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>5. 새로운 아이디어에 관심이 많나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q5" value="N" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q5" value="S" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>6. 결정을 내릴 때 감정보다 논리를 더 중시하나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q6" value="T" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q6" value="F" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>7. 사전 계획을 중요하게 생각하나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q7" value="J" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q7" value="P" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>8. 혼자 시간을 보내는 것을 좋아하나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q8" value="I" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q8" value="E" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>9. 구체적이고 현실적인 일을 선호하나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q9" value="S" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q9" value="N" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <label>10. 규칙과 일정을 따르는 것을 좋아하나요?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q10" value="J" required>
+                                <label class="form-check-label">예</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="q10" value="P" required>
+                                <label class="form-check-label">아니요</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mt-4">결과 보기</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
